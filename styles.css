@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  background: #f6a7e7;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  overflow: hidden;
+}
+
+.screen {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.active {
+  display: flex;
+}
+
+.box {
+  background: rgb(208, 101, 218);
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  border: 2px solid #f8bbd0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-button {
+  background: linear-gradient(135deg, #f06292, #ba68c8);
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 260px;
+  margin: 20px auto 0 auto;
+  display: block;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.card-button:hover {
+  transform: scale(1.05);
+}
+
+.message {
+  color: #890cd7;
+  font-size: 16px;
+  margin-top: 10px;
+  display: none;
+}
+
+.footer-note {
+  font-size: 16px;
+  color: #e20c5e;
+  margin-top: 10px;
+}
+
+.countdown {
+  font-size: 24px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.countdown div {
+  background: #ef98ea;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  animation: fall 5s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+.loading-text {
+  font-size: 20px;
+  color: #c2185b;
+}
+
+.hearts {
+  color: #ea0c5d;
+}
+
+.countdown-title {
+  color: #d81b60;
+}
+
+.countdown-note {
+  margin-top: 15px;
+}

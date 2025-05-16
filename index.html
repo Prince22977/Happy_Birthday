@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Screen 1: Loading -->
+  <div class="screen active" id="screen1">
+    
+    <div class="box">
+      <h2 class="hearts">💗💗💗</h2>
+      <p class="loading-text">Loading something special...</p>
+      <p>🎂 ✨ 🎁 ❤️ 🎈</p>
+    </div>
+  </div>
+
+  <!-- Screen 2: Countdown -->
+  <div class="screen" id="screen2">
+    <div class="box">
+      <h2 class="countdown-title">Your Special Day is Almost Here 💕</h2>
+      <div class="countdown">
+        <div><span id="days">0</span><br>Days<br>❣️</div>
+        <div><span id="hours">0</span><br>Hours<br>🎁</div>
+        <div><span id="minutes">0</span><br>Minutes<br>🎂</div>
+        <div><span id="seconds">0</span><br>Seconds<br>⭐</div>
+      </div>
+      <p class="countdown-note">Just a little more... A small gift for my favorite person ❤️</p>
+    </div>
+  </div>
+
+  <!-- Screen 3: Final Wish -->
+  <div class="screen" id="screen3">
+    <audio id="bgMusic" loop>
+      <source src="Dekho Na Dekho Na Zulfon Se - PagalWorld.mp3" type="audio/mpeg">
+    </audio>
+    <div class="box">
+      <h1>🎂 Happy Birthday ✨💗</h1>
+      <h2>❤️ Madam ji ❤️</h2>
+      <button class="card-button" onclick="openCard()">💌 Tap to open the card 💌</button>
+      <div class="message" id="birthdayMessage">
+       💖 My love, today is all about you. 💖<br>
+       💘 First of all Happy Birthday S I D D H I 💘<br>
+       💝 Every moment with you feels magical. You make my life brighter, and I'm so lucky to have you. 💝<br>
+       💗 I will pray to God that all your dreams come true.💗<br>
+       💕 Happy Birthday, my Cutiepie. I love you endlessly.💕<br>
+       💓 I wanna be with you forever. You are my everything. 💓<br>
+       ❣️ I wanna spend my whole life with you. Love you so much. ❣️<br>
+      </div>
+      <div class="footer-note">Let's always stay like this... together, forever 💫</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
