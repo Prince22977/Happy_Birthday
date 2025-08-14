@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff0f5;
+  overflow: hidden;
+}
+
+h1, h2 {
+  font-family: 'Great Vibes', cursive;
+  color: #d81b60;
+}
+
+.screen {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.active {
+  display: flex;
+}
+
+.box {
+  background: #FFDDEE;
+  padding: 40px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  margin: 0 20px;
+}
+
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+.loading-text, .countdown-note, .footer-note {
+  color: #6a1b9a;
+  font-weight: 500;
+}
+
+.message {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  color: #6a1b9a;
+}
+
+.card-button, .tab-button {
+  background: linear-gradient(135deg, #f06292, #ba68c8);
+  color: #fff;
+  font-weight: bold;
+  padding: 15px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.card-button:hover, .tab-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ec407a, #ab47bc);
+}
+
+.countdown {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.countdown div {
+  background: #fce4ec;
+  border-radius: 15px;
+  padding: 15px;
+  font-weight: bold;
+  color: #ad1457;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  animation: fall 5s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-100px) rotate(0deg); }
+  100% { transform: translateY(100vh) rotate(360deg); }
+}
+
+.tabs {
+  margin-top: 20px;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 20px;
+  color: #6a1b9a;
+  font-size: 16px;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#winMessage {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #4caf50;
+  font-weight: bold;
+  display: none;
+}
+
+#sorryTab {
+  animation: pulse 2s infinete;
+}
+@keyframes pulse {
+  0% {background-color: rgba(255, 192, 203, 0.1); }
+  50% {background-color: rgba(255, 192, 203, 0.3); }
+  100% {background-color: rgba(255, 192, 203, 0.1); }
+}

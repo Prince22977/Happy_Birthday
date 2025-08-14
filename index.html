@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <video autoplay muted loop id="bgVideo">
+    <source src="video6149962794969078025.mp4" type="video/mp4" />
+    
+  </video>.
+
+  <div class="screen active" id="screen1">
+    <div class="box">
+      <h2 class="hearts">💗💗💗</h2>
+      <p class="loading-text">Loading something special...</p>
+      <p>🎂 ✨ 🎁 ❤️ 🎈</p>
+    </div>
+  </div>
+
+  <div class="screen" id="screen2">
+    <div class="box">
+      <h2 class="countdown-title">💕 Your Special Day is Almost Here 💕</h2>
+      <div class="countdown">
+        <div><span id="days">0</span><br>Days 🎂</div>
+        <div><span id="hours">0</span><br>Hours ✨</div>
+        <div><span id="minutes">0</span><br>Minutes 🎁</div>
+        <div><span id="seconds">0</span><br>Seconds 🎈</div>
+      </div>
+      <p class="countdown-note">❤️ Just a little more... A small gift for my favorite person ❤️</p>
+    </div>
+  </div>
+
+  <div class="screen" id="screen3">
+    <audio id="bgMusic" loop>
+      <source src="KiYKWCt3cFw.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="box">
+      <h1>🎂 Happy Birthday! ✨💗</h1>
+      <h2>❤️ D E V I     J I ❤️</h2>
+      <button class="card-button" onclick="openCard()">💌Tap to open your card💌</button>
+
+      <div id="tabs" class="tabs" style="display:none;">
+        <button class="tab-button" onclick="showTab('messageTab')">1.💌 Message 💌</button>
+        <button class="tab-button" onclick="showTab('sorryTab')">2.😢 Sorry 😢</button>
+        <button class="tab-button" onclick="showTab('videoTab')">3.🫶 My Heart 🫶</button>
+        <button class="tab-button" onclick="showTab('emojiGameTab')">4.😘 Mwaah Match 😘</button>
+      </div>
+
+      <div class="tab-content" id="messageTab">
+        <div class="message">
+          💖 My love, today is all about you. 💖<br>
+          🎉 First of all Happy Birthday "S I D D H I" 🎉<br><br>
+          💝 Every moment with you feels magical. You make my life brighter, and I'm so lucky to have you. 💝<br>
+          💗 I will pray to God that all your dreams come true.💗<br><br>
+          💕 Happy Birthday, my Cutiepie. I love you endlessly.💕<br>
+          💓 I wanna be with you forever. You are my everything. 💓<br><br>
+          ❣️ I wanna spend my whole life with you. ❣️<br>
+          💖 You are the reason of my Happiness. The date and time when you said that you love me I can't forget never in my whole life. 💖<br><br>
+          💗 My last words in this are, My love, respect and my efforts for you will never less by time. My love i am always with you in every situation. Anytime if you get angry with me, I do all my efforts to make you happy again. 💗<br>
+          💕 I am always with you My love , Please don't leave me alone. Please I can't live without you😭 💕<br>
+          😚 Mwaaaaaaaaaaaaaahhhhhhhh 😚<br>
+        </div>
+      </div>
+
+      <div class="tab-content" id="sorryTab">
+        <div class="message">
+        😔 I'm Sorry <br>
+        💖 My love, I know I made a mistake. I never wanted to hurt you. Please forgive me, I can't live without you. You are my everything. 💖<br>
+        💗 I promise to make it up to you and never let it happen again. 💗<br>
+        💝 I love you more than words can say. 💝<br>
+        😔 I am Sorry Baby please forgive me 😔<br>
+        🥺 I love you yrr, please maaf krdo m promise krta hu aage s aesi galti nhi krunga or ha tum bata nhi rhi but mujhe pata h tum avi v mere s gussa ho 🥺<br>
+        😭 Please I am sorry Baby, Maaf krdo na please yrr baby please, I love you😭🙏<br>
+        🥺 I love you Baby yrr dekho tum gussa hoti hoto kuch v acha ni lagta plesae maaf krdo na please baby please sorry Baby 🥺<br>
+        😔 Ab tumhari marji tum maaf karogi ya nhi wese v jo chij mai khona ni chahta wo meri life s chali hi jati h kya m itna bura hu ki kisi ka pyar v deserve ni krta m ek choti si galti or sab chor k chale jate h kya itna bura hu m 😔 <br>
+        🙂 I hope ki tum mujhe maaf krdogi 🙂<br>
+        </div>
+      </div>
+
+      <div class="tab-content" id="videoTab">
+        <video controls width="100%">
+          <source src="SIDDHI.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="tab-content" id="emojiGameTab">
+        <h3>🎯 Match My Love 💘</h3>
+        <div id="game-board"></div>
+        <p id="winMessage">🎉 Congratulations, My Love! You matched them all! 💖<br>
+                              Now ,Tell me one wish of yours which only I will fulfill and no one else can do it for you. 💝</p>
+                              <div class="footer-note">Let's always stay like this... together, forever 💫</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
